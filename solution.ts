@@ -3,3 +3,8 @@ function formateString(input:string, toUpper:boolean=true):string{
 }
 
 
+function filterByRating(items: {title:string; rating:number}[]) : {title:string; rating:number }[]{
+    return items.filter(item => item.rating >=4);
+}
+
+
