@@ -8,3 +8,13 @@ function filterByRating(items: {title:string; rating:number}[]) : {title:string;
 }
 
 
+function concatenateArrays<T>(...arrays : T[][]) : T[]{
+    const result : T[]=[];
+    for (const arr of arrays){
+        result.push(...arr)
+    }
+        return result;
+    
+}
+
+
